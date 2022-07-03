@@ -10,10 +10,13 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import compose.calory.core.navigation.Route
+import compose.calory.onboarding_presentation.gender.GenderScreen
 import compose.calory.onboarding_presentation.welcome.WelcomeScreen
 import compose.calory.tracker.navigation.navigate
 import compose.calory.tracker.ui.theme.CaloryTrackerTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,11 +30,11 @@ class MainActivity : ComponentActivity() {
                     composable(Route.WELCOME) {
                         WelcomeScreen(onNavigate = navController::navigate)
                     }
+                    composable(Route.GENDER) {
+                        GenderScreen(onNavigate = navController::navigate)
+                    }
                     composable(Route.AGE) {
                         Toast.makeText(this@MainActivity, "Age Route", Toast.LENGTH_LONG).show()
-                    }
-                    composable(Route.GENDER) {
-                        Toast.makeText(this@MainActivity, "Gender", Toast.LENGTH_LONG).show()
                     }
                     composable(Route.HEIGHT) {
                         Toast.makeText(this@MainActivity, "Height", Toast.LENGTH_LONG).show()
