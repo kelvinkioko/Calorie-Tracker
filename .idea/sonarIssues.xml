@@ -28,7 +28,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/base-module.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/compose-module.gradle">
           <value>
             <set />
           </value>
@@ -44,6 +54,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/onboarding/onboarding_presentation/build.gradle.kts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tracker/tracker_data/build.gradle.kts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tracker/tracker_domain/build.gradle.kts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tracker/tracker_presentation/build.gradle.kts">
           <value>
             <set />
           </value>

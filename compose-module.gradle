@@ -15,6 +15,12 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion Compose.composeCompilerVersion
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -33,12 +39,19 @@ android {
 }
 
 dependencies {
-    // region Hilt dependencies
+    implementation Compose.compiler
+    implementation Compose.ui
+    implementation Compose.uiToolingPreview
+    implementation Compose.hiltNavigationCompose
+    implementation Compose.material
+    implementation Compose.runtime
+    implementation Compose.navigation
+    implementation Compose.viewModelCompose
+    implementation Compose.activityCompose
+
     kapt DaggerHilt.hiltCompiler
     implementation DaggerHilt.hiltAndroid
-    // endregion
 
-    // region Testing dependencies
     testImplementation Testing.junit4
     testImplementation Testing.junitAndroidExt
     testImplementation Testing.truth
@@ -47,9 +60,7 @@ dependencies {
     testImplementation Testing.composeUiTest
     testImplementation Testing.mockk
     testImplementation Testing.mockWebServer
-    // endregion
 
-    // region Android Testing dependencies
     androidTestImplementation Testing.junit4
     androidTestImplementation Testing.junitAndroidExt
     androidTestImplementation Testing.truth
@@ -59,5 +70,4 @@ dependencies {
     androidTestImplementation Testing.mockk
     androidTestImplementation Testing.mockWebServer
     androidTestImplementation Testing.hiltTesting
-    // endregion
 }
