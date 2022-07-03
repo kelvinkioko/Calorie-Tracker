@@ -22,8 +22,8 @@
     <string name="next_day">Next day</string>
     <string name="yesterday">Yesterday</string>
     <string name="tomorrow">Tomorrow</string>
-    <string name="nutrient_info">%dg • %dkcal</string>
-    <string name="amount_info">%dg</string>
+    <string name="nutrient_info">%d g • %d kcal</string>
+    <string name="amount_info">%d g</string>
     <string name="grams">g</string>
     <string name="extend">Extend</string>
     <string name="collapse">Collapse</string>
@@ -33,10 +33,10 @@
     <string name="snacks">Snacks</string>
     <string name="add_meal">Add %s</string>
     <string name="add">Add</string>
-    <string name="search">Search...</string>
+    <string name="search">Search&#8230;</string>
     <string name="today">Today</string>
     <string name="recent">Recent</string>
-    <string name="kcal_per_100g">%dkcal / 100g</string>
+    <string name="kcal_per_100g">%d kcal / 100g</string>
     <string name="track">Track</string>
     <string name="error_something_went_wrong">Oops, something went wrong!</string>
     <string name="no_results">No results</string>

@@ -3,17 +3,7 @@
   <component name="issues">
     <option name="index">
       <map>
-        <entry key="$PROJECT_DIR$/.github/workflows/build.yml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/.gitignore">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/README.md">
+        <entry key="$PROJECT_DIR$/.idea/sonarIssues.xml">
           <value>
             <set />
           </value>
@@ -23,42 +13,7 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/androidTest/java/compose/calory/tracker/ExampleInstrumentedTest.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/compose/calory/tracker/MainActivity.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/compose/calory/tracker/ui/theme/Color.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/compose/calory/tracker/ui/theme/Theme.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/compose/calory/tracker/ui/theme/Type.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+        <entry key="$PROJECT_DIR$/app/build.gradle.kts">
           <value>
             <set />
           </value>
@@ -73,12 +28,22 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/test/java/compose/calory/tracker/ExampleUnitTest.kt">
+        <entry key="$PROJECT_DIR$/build.gradle">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/build.gradle">
+        <entry key="$PROJECT_DIR$/core/build.gradle.kts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/onboarding_domain/build.gradle.kts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/onboarding_presentation/build.gradle.kts">
           <value>
             <set />
           </value>
