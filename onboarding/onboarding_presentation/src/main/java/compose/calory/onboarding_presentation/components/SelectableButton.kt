@@ -26,7 +26,7 @@ fun SelectableButton(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     textStyle: TextStyle = MaterialTheme.typography.button
-    ) {
+) {
     Box(
         contentAlignment = Alignment.Center,
         modifier = modifier
