@@ -13,9 +13,16 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import compose.calory.core_ui.localSpacing
 import compose.calory.onboarding_presentation.components.ActionButton
 import compose.calory.core.R as coreRes
+
+@Preview(showBackground = true, showSystemUi = true)
+@Composable
+fun DefaultPreview() {
+    WelcomeScreen()
+}
 
 @Composable
 fun WelcomeScreen() {
