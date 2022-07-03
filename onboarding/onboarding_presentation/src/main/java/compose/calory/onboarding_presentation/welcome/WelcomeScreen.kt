@@ -13,12 +13,23 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
+import compose.calory.core.navigation.Route
+import compose.calory.core.util.UiEvent
 import compose.calory.core_ui.localSpacing
 import compose.calory.onboarding_presentation.components.ActionButton
 import compose.calory.core.R as coreRes
 
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
-fun WelcomeScreen() {
+fun DefaultPreview() {
+    // TODO: Add screen for preview
+}
+
+@Composable
+fun WelcomeScreen(
+    onNavigate: (UiEvent.Navigate) -> Unit?
+) {
     val spacing = localSpacing.current
     Column(
         modifier = Modifier
@@ -37,7 +48,7 @@ fun WelcomeScreen() {
         )
         ActionButton(
             text = stringResource(id = coreRes.string.next),
-            onClick = { /*TODO*/ },
+            onClick = { onNavigate(UiEvent.Navigate(Route.AGE)) },
             modifier = Modifier.align(Alignment.CenterHorizontally)
         )
     }

@@ -36,11 +36,15 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    composeOptions {
+        kotlinCompilerExtensionVersion = Compose.composeCompilerVersion
+    }
 }
 
 dependencies {
     implementation Compose.compiler
     implementation Compose.ui
+    debugImplementation Compose.uiTooling
     implementation Compose.uiToolingPreview
     implementation Compose.hiltNavigationCompose
     implementation Compose.material
@@ -51,6 +55,11 @@ dependencies {
 
     kapt DaggerHilt.hiltCompiler
     implementation DaggerHilt.hiltAndroid
+
+    implementation(AndroidX.coreKtx)
+    implementation(AndroidX.appCompat)
+
+    implementation(Google.material)
 
     testImplementation Testing.junit4
     testImplementation Testing.junitAndroidExt
