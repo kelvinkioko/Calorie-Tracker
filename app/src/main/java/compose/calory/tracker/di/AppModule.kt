@@ -5,6 +5,7 @@ import android.content.Context.MODE_PRIVATE
 import android.content.SharedPreferences
 import compose.calory.core.data.preferences.DefaultPreferences
 import compose.calory.core.domain.preferences.Preferences
+import compose.calory.core.domain.use_case.FilterOutDigits
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -27,5 +28,11 @@ object AppModule {
     @Singleton
     fun providePreferences(sharedPrefs: SharedPreferences): Preferences {
         return DefaultPreferences(sharedPrefs = sharedPrefs)
+    }
+
+    @Provides
+    @Singleton
+    fun provideFilterOutDigitsUseCase(): FilterOutDigits {
+        return FilterOutDigits()
     }
 }
