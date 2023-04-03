@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 
 ## About
-**Calorie Tracker** is a practice project on Multi-Modular development with clean architecture and compose
+**Calorie Tracker** is a practice project on Multi-Modular development with clean architecture and compose (Modularization by Layer)
 
 ## Built With 🛠
 - [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
